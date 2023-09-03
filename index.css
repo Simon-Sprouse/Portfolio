@@ -1,11 +1,27 @@
+:root {
+    --label-color: black;
+}
+
 h1 { 
+    background-color: white;
     display: block;
     font-size: min(28vh, 28vw);
-    color: red;
-    margin-top: -5vh;
+    color: var(--label-color);
+    margin-top: -3vh;
     margin-bottom: 0;
     text-align: center;
 }
+
+/* @media (max-width: 768px) {
+    
+    :root {
+      --label_color: blue;
+    }
+    nav { 
+        background-color: blue;
+    }
+   
+} */
 
 /* .name { 
     background-color: lightblue;
@@ -18,7 +34,7 @@ h1 {
 
 nav { 
     background-color: red;
-    position: fixed;
+
     top: 50vh;
     margin-left: 25vw;
     margin-right: 25vw;
@@ -40,4 +56,27 @@ li a {
 
 li::after { 
     content: "";
+}
+
+.bar{
+    background-color: purple;
+    margin: auto auto;
+    width: 10px;
+    height: 100px;
+    animation: 3s linear infinte grow;
+}
+
+@keyframes grow { 
+    20% { 
+        height: 10px;
+    }
+    100% { 
+        height: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --label-color: pink;
+    }
 }
