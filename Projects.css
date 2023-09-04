@@ -6,7 +6,7 @@
 body { 
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
 }
 
 .top { 
@@ -60,15 +60,19 @@ li a:hover {
     background-color: black;
 }
 
+.projects-gallery a { 
+    text-decoration: none !important;
+}
 
 #projects-section { 
 
     background-color: white;
-
+    text-decoration: none;
 }
 
 #projects-section h2 { 
     margin-top: 0;
+    text-decoration: none;
 }
   
 .projects-gallery { 
@@ -85,32 +89,36 @@ li a:hover {
 }
 
 .project-tile h2 { 
-    text-decoration: none;
-    color: black;
+    color: #1E1E1E;
 }
 
 .project-tile p { 
-    text-decoration: none;
-    color: black;
-}
-
-.project-tile:hover { 
-    background-color: black;
-}
-
-.project-tile:hover > img { 
-    border: 1px solid white;
+    color: #1E1E1E;
 }
 
 .project-tile:hover > h2 { 
-    text-decoration: none;
     color: gold;
 }
 
 .project-tile:hover > p { 
-    text-decoration: none;
+    color: white;
+}
+
+.project-tile:hover { 
+    /* background-color: #EBEBCD; */
+    background-color: grey;
     color: gold;
 }
+
+/* .project-tile h2:hover { 
+    color: gold;
+    background-color: black;
+} */
+
+/* .project-tile:hover > img { 
+    border: 1px solid white;
+} */
+
 
   
 .project-tile img { 
