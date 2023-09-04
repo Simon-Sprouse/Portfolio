@@ -15,20 +15,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: beige;
     height: 120px;
+    /* border-bottom: 3px solid black; */
 }
 
 
 h1 { 
     font-size: 7vw;
-    color: red;
+    color: black;
     margin-left: 3vw;
     /* margin-top: 10px; */
 }
 
 nav { 
-    background-color: red;
+    /* background-color: red; */
     width: 50%;
 }
 
@@ -45,6 +46,7 @@ ul {
 }
 
 li a { 
+    font-size: 21px;
     padding: 0.5vw;
     display: inline;
     text-decoration: none;
@@ -61,7 +63,7 @@ li a:hover {
 
 #projects-section { 
 
-    background-color: yellow;
+    background-color: white;
 
 }
 
@@ -77,13 +79,44 @@ li a:hover {
 
 .project-tile { 
     border: 1px solid black;
+    background-color: beige;
     padding: 2vh;
     margin: 3vh;
 }
+
+.project-tile h2 { 
+    text-decoration: none;
+    color: black;
+}
+
+.project-tile p { 
+    text-decoration: none;
+    color: black;
+}
+
+.project-tile:hover { 
+    background-color: black;
+}
+
+.project-tile:hover > img { 
+    border: 1px solid white;
+}
+
+.project-tile:hover > h2 { 
+    text-decoration: none;
+    color: gold;
+}
+
+.project-tile:hover > p { 
+    text-decoration: none;
+    color: gold;
+}
+
   
 .project-tile img { 
     height: 300px;
     width: 300px;
     object-fit: cover;
     object-position: center bottom;
+    border: 1px solid black;
 }
