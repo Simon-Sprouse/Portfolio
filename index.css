@@ -3,6 +3,21 @@
     --background-color: white;
 }
 
+body, html { 
+    overflow: hidden;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.name { 
+    margin-top: 10vh;
+}
+
 h1 { 
     background-color: var(--background-color);
     color: var(--label-color);
@@ -18,13 +33,14 @@ h1 {
 nav { 
     background-color: red;
 
-    top: 50vh;
+    margin-top: 5vh;
     margin-left: 25vw;
     margin-right: 25vw;
     width: 50%;
 }
 
 ul { 
+    padding: 0.5vw;
     background-color: beige;
     list-style: none;
     display: flex;
@@ -36,24 +52,20 @@ ul {
 }
 
 li a { 
+    padding: 0.5vw;
     display: inline;
+    text-decoration: none;
+    color: black;
     /* margin-left: 1vw;
     margin-right: 1vw; */
 }
 
-
-
-
-.sign { 
-    background-color: gold;
-    display: block;
-    margin: 0 auto;
-    margin-top: -30vh;
-    padding: 0;
-    width: 200px;
-    height: 50vw;
-    transform: rotate(90deg);
+li a:hover { 
+    color: gold;
+    background-color: black;
 }
+
+
 
 
 @media (max-width: 800px) {
