@@ -1,35 +1,18 @@
 :root {
     --label-color: black;
+    --background-color: white;
 }
 
 h1 { 
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--label-color);
     display: block;
     font-size: min(28vh, 28vw);
-    color: var(--label-color);
     margin-top: -3vh;
     margin-bottom: 0;
     text-align: center;
 }
 
-/* @media (max-width: 768px) {
-    
-    :root {
-      --label_color: blue;
-    }
-    nav { 
-        background-color: blue;
-    }
-   
-} */
-
-/* .name { 
-    background-color: lightblue;
-    position: fixed;
-    top: 0;
-    margin-left: 25vw;
-    margin-right: 25vw;
-} */
 
 
 nav { 
@@ -42,41 +25,42 @@ nav {
 }
 
 ul { 
-    background-color: green;
+    background-color: beige;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 li a { 
+    display: inline;
+    /* margin-left: 1vw;
+    margin-right: 1vw; */
+}
+
+
+
+
+.sign { 
+    background-color: gold;
     display: block;
-    
+    margin: 0 auto;
+    margin-top: -30vh;
+    padding: 0;
+    width: 200px;
+    height: 50vw;
+    transform: rotate(90deg);
 }
 
-li::after { 
-    content: "";
-}
 
-.bar{
-    background-color: purple;
-    margin: auto auto;
-    width: 10px;
-    height: 100px;
-    animation: 3s linear infinte grow;
-}
-
-@keyframes grow { 
-    20% { 
-        height: 10px;
-    }
-    100% { 
-        height: 100px;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     :root {
-        --label-color: pink;
+        --label-color: purple;
+        /* --label-color: white;
+        --background-color: black; */
     }
 }
+
