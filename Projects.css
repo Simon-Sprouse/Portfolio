@@ -128,3 +128,46 @@ li a:hover {
     object-position: center bottom;
     border: 1px solid black;
 }
+
+.resume-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left { 
+
+    color: green;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.left h2 { 
+    margin-bottom: -5px;
+    margin-left: 30px;
+}
+
+.download {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.download h2  {
+    font-size: 30px;
+    margin: 0 50px;
+}
+
+.right { 
+    width: 50%;
+}
+
+.right img { 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ai { 
+   padding: 30px;
+}
