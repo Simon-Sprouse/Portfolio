@@ -1,0 +1,11 @@
+body {
+    background-color: blue;
+}
+
+.name { 
+    background-color: purple;
+}
+
+h1 { 
+    font-size: 0;
+}
