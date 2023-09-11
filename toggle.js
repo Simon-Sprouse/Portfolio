@@ -1,13 +1,23 @@
-var style = 0;
+
+function load() { 
+    var style = sessionStorage.getItem("theme");
+    if (style != "index.css" && style != "dark.css") { 
+        console.log("you loaded the theme");
+        sessionStorage.setItem("theme", "index.css");
+        style = "index.css";
+    }
+    document.getElementById("page-style").setAttribute("href", style);
+}
 
 function toggle() { 
-    if (style == 0) {
-        style = 1;
-        document.getElementById("page-style").setAttribute("href", "dark.css");
+    var style = sessionStorage.getItem("theme");
+    if (style == "index.css") {
+        sessionStorage.setItem("theme", "dark.css");
+        load();
     }
     else { 
-        style = 0;
-        document.getElementById("page-style").setAttribute("href", "index.css")
+        sessionStorage.setItem("theme", "index.css");
+        load();
     }
     
 }
