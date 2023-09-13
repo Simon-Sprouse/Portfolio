@@ -234,7 +234,10 @@ body {
     margin-right: 10px;
 }
 
-
+.resume { 
+    height: 1000px;
+    width: 100%;
+}
 
 .links {
     margin-top: -10px;
