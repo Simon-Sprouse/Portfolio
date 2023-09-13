@@ -30,7 +30,8 @@ body {
 }
 
 #landing-body { 
-    background-color: #004D00;
+    height: 80vh;
+    background: linear-gradient(45deg, orange, purple);
 }
 
 .front { 
