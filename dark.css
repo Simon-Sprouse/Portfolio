@@ -8,6 +8,8 @@
 
 :root { 
     --background_color: #0D3D00;
+    --background_color2: #166E01;
+    --background_color3: #1A8400;
     --font_color: white;
     --highlight_color: gold;
 }
@@ -80,12 +82,22 @@ body {
 
 #landing-nav li a:hover { 
     color: var(--highlight_color);
+    /* font-family: 'script'; */
     /* background-color: black; */
 }
 
-
 #title-button { 
     cursor: pointer;
+}
+
+#page-title { 
+    font-family: "script", Cambria;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+#page-title:hover {
+    color: var(--highlight_color);
 }
 
 /* Nav for non-Home pages */
@@ -124,7 +136,7 @@ body {
 }
 
 #projects-section { 
-    background-color: #166E01;
+    background-color: var(--background_color2);
     border: 10px solid white;
     padding: 20px;
     text-decoration: none;
@@ -136,24 +148,44 @@ body {
 }
   
 .projects-gallery { 
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .project-tile { 
-    background-color: #1A8400;
+    background-color: var(--background_color3);
     border: 10px solid white;
     padding: 2vh;
     margin: 3vh;
+    width: 300px;
+
 }
 
 .project-tile h2 { 
-    margin-left: 10%;
+    text-align: center;
     color: white;
 }
 
 .project-tile p { 
-    margin-left: 10%;
+    font-size: 0;
+    margin-left: 50px;
     color: white;
+}
+
+.project-tile img { 
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center bottom;
+    border: 2px solid white;
+}
+
+.project-tile:hover { 
+    background-color: white;
+    color: black;
+    border: 10px solid black;
 }
 
 .project-tile:hover > h2 { 
@@ -164,19 +196,11 @@ body {
     color: black;
 }
 
-.project-tile:hover { 
-    background-color: #CEFFC1;
-    color: black;
+.project-tile:hover > img {
+    border: 2px solid black;
 }
 
-.project-tile img { 
-    margin-left: 10%;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    object-position: center bottom;
-    border: 1px solid black;
-}
+
 
 
 .resume-section { 
