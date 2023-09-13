@@ -61,12 +61,12 @@ body {
 
 /* Nav for non-Home pages */
 #top-right-nav { 
+    margin-left: -2.5%;
     width: 50%;
 }
 
 #top-right-nav ul { 
     padding: 0.5vw;
-    background-color: beige;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -77,17 +77,99 @@ body {
 }
 
 #top-right-nav li a { 
+    color: var(--font_color);
     font-size: 21px;
     padding: 0.5vw;
     display: inline;
     text-decoration: none;
-    color: black;
 }
 
 #top-right-nav li a:hover { 
     color: gold;
     background-color: black;
 }
+
+
+
+.projects-gallery a { 
+    text-decoration: none !important;
+}
+
+#projects-section { 
+    background-color: #166E01;
+    border: 10px solid white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#projects-section h2 { 
+    margin-top: 0;
+    text-decoration: none;
+}
+  
+.projects-gallery { 
+    display: block;
+}
+
+.project-tile { 
+    background-color: #1A8400;
+    border: 10px solid white;
+    padding: 2vh;
+    margin: 3vh;
+}
+
+.project-tile h2 { 
+    margin-left: 10%;
+    color: white;
+}
+
+.project-tile p { 
+    margin-left: 10%;
+    color: white;
+}
+
+.project-tile:hover > h2 { 
+    color: gold;
+}
+
+.project-tile:hover > p { 
+    color: white;
+}
+
+.project-tile:hover { 
+    background-color: grey;
+    color: gold;
+}
+
+.project-tile img { 
+    margin-left: 10%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center bottom;
+    border: 1px solid black;
+}
+
+
+.resume-section { 
+    border: 10px solid white;
+    padding: 20px;
+    background-color: #166E01;
+}
+
+.Service { 
+    border: 10px solid white;
+    padding: 20px;
+    background-color: #166E01;
+}
+
+.ai { 
+    border: 10px solid white;
+    padding: 20px;
+    background-color: #166E01;
+}
+
+
 
 .toggle { 
     margin-left: 15%;
@@ -101,6 +183,6 @@ body {
 }
 
 .toggle button { 
-
+    margin-left: 20px;
     font-size: 20px;
 }
