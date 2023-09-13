@@ -1,11 +1,15 @@
 @font-face {
     font-family: "script";
     src: url("Fonts/SAMAN.TTF") format("opentype");
+    font-weight: 900;
 }
+
+/* * { border: 1px solid white; } */
 
 :root { 
     --background_color: #0D3D00;
     --font_color: white;
+    --highlight_color: gold;
 }
 
 body {
@@ -17,22 +21,23 @@ body {
 
 
 .front { 
-    margin-top: 20%;
+    margin-top: 23%;
     display: flex;
-
+    align-items: center;
 }
 
 .name { 
     font-family: "script", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: -5%;
     width: 100%;
     height: 100%;
-    font-size: 50px;
+    font-size: 69px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .name:hover { 
-    color: gold;
+    color: var(--highlight_color);
 }
 
 #simon {
@@ -41,8 +46,8 @@ body {
 
 /* Nav for the landing page */
 #landing-nav { 
-
-    margin-left: 30px;
+    margin-top: -2%;
+    margin-left: 4%;
     font-size: 30px;
     height: 100%;
     width: 50%;
@@ -74,7 +79,7 @@ body {
 }
 
 #landing-nav li a:hover { 
-    color: #FFDE58;
+    color: var(--highlight_color);
     /* background-color: black; */
 }
 
@@ -109,8 +114,7 @@ body {
 }
 
 #top-right-nav li a:hover { 
-    color: gold;
-    background-color: black;
+    color: var(--highlight_color);
 }
 
 
