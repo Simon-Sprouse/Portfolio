@@ -1,22 +1,24 @@
 // Load the selected css page
-function load() {
+function load() { 
     var style = sessionStorage.getItem("theme");
-    if (style != "index.css" && style != "dark.css") {
+    if (style != "index.css" && style != "dark.css") { 
         console.log("you loaded the theme");
         sessionStorage.setItem("theme", "index.css");
         style = "index.css";
     }
-    document.getElementById("page-style").setAttribute("href", style);
+    document.getElementById("page-style")!.setAttribute("href", style);
 }
+
 // Swap the current css page
-function toggle() {
+function toggle() { 
     var style = sessionStorage.getItem("theme");
     if (style == "index.css") {
         sessionStorage.setItem("theme", "dark.css");
         load();
     }
-    else {
+    else { 
         sessionStorage.setItem("theme", "index.css");
         load();
     }
+    
 }
