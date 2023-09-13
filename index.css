@@ -188,14 +188,30 @@ h1 {
 }
 
 .download {
-    margin-top: 50px;
+    margin-left: -20px;
+    margin-top: -5px;
     display: flex;
     align-items: center;
 }
 
 .download h2  {
     font-size: 30px;
-    margin: 0 50px;
+}
+
+.dbutt { 
+    margin-top: 40px;
+    margin-left: 10px
+}
+
+.links { 
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+}
+
+.links a { 
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .right { 

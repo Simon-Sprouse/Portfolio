@@ -10,6 +10,7 @@ body {
     margin-right: 20%;
 }
 
+
 .front { 
     margin-top: 20%;
     display: flex;
@@ -129,16 +130,16 @@ body {
 }
 
 .project-tile:hover > h2 { 
-    color: gold;
+    color: black;
 }
 
 .project-tile:hover > p { 
-    color: white;
+    color: black;
 }
 
 .project-tile:hover { 
-    background-color: grey;
-    color: gold;
+    background-color: #CEFFC1;
+    color: black;
 }
 
 .project-tile img { 
@@ -157,16 +158,57 @@ body {
     background-color: #166E01;
 }
 
+.resume-section a {
+    color: white;
+}
+
+.download {
+    margin-top: -5px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.download h2  {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+
+.links {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.links i { 
+    margin: 0 10px;
+}
+
+.links i:hover { 
+    color: var(--background_color);
+}
+
 .Service { 
     border: 10px solid white;
     padding: 20px;
     background-color: #166E01;
 }
 
+.Service a {
+    color: white;
+}
+
 .ai { 
     border: 10px solid white;
     padding: 20px;
     background-color: #166E01;
+}
+
+.ai a {
+    color: white;
 }
 
 
