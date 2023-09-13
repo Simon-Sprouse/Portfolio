@@ -30,6 +30,12 @@ body {
     margin-top: 10vh;
 }
 
+
+
+#title-button { 
+    cursor: pointer;
+}
+
 h1 { 
     background-color: var(--background-color);
     color: var(--label-color);

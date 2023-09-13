@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "script";
+    src: url("Fonts/SAMAN.TTF") format("opentype");
+}
+
 :root { 
     --background_color: #0D3D00;
     --font_color: white;
@@ -18,6 +23,7 @@ body {
 }
 
 .name { 
+    font-family: "script", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     height: 100%;
     font-size: 50px;
@@ -25,6 +31,13 @@ body {
     justify-content: space-evenly;
 }
 
+.name:hover { 
+    color: gold;
+}
+
+#simon {
+    font-family: "script";
+}
 
 /* Nav for the landing page */
 #landing-nav { 
@@ -47,7 +60,12 @@ body {
     padding-right: 0;
 } */
 
+#landing-nav ul { 
+    list-style: none;
+}
+
 #landing-nav li a { 
+    font-family: 'Times New Roman', serif;
     font-size: 21px;
     padding: 0.5vw;
     display: inline;
@@ -57,7 +75,12 @@ body {
 
 #landing-nav li a:hover { 
     color: #FFDE58;
-    background-color: black;
+    /* background-color: black; */
+}
+
+
+#title-button { 
+    cursor: pointer;
 }
 
 /* Nav for non-Home pages */
