@@ -17,19 +17,21 @@
     --highlight_color: gold;
 }
 
-#ai-page {
-    --background-color: blue;
-}
+/* 
+---------------------------------
+          LANDING PAGE 
+---------------------------------
+*/
 
 body {
-    background-color: var(--background_color);
     color: var(--font_color);
     margin-left: 20%;
     margin-right: 20%;
-    animation: 3s linear 0s 1 fade;
 }
 
-
+#landing-body { 
+    background-color: #004D00;
+}
 
 .front { 
     margin-top: 23%;
@@ -55,7 +57,6 @@ body {
     font-family: "script";
 }
 
-/* Nav for the landing page */
 #landing-nav { 
     margin-top: -2%;
     margin-left: 4%;
@@ -63,18 +64,6 @@ body {
     height: 100%;
     width: 50%;
 }
-
-/* #landing-nav  > ul { 
-    padding: 0.5vw;
-    background-color: beige;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-} */
 
 #landing-nav ul { 
     list-style: none;
@@ -99,17 +88,24 @@ body {
     cursor: pointer;
 }
 
+/* 
+---------------------------------
+          OTHER PAGES 
+---------------------------------
+*/
+
 #page-title { 
     font-family: "script", Cambria;
     font-size: 50px;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
 #page-title:hover {
     color: var(--highlight_color);
 }
 
-/* Nav for non-Home pages */
+
 #top-right-nav { 
     margin-left: -2.5%;
     width: 50%;
@@ -138,14 +134,22 @@ body {
     color: var(--highlight_color);
 }
 
+/* 
+---------------------------------
+          PROJECTS PAGE 
+---------------------------------
+*/
 
+#projects-body { 
+    background-color: #690000;
+}
 
 .projects-gallery a { 
     text-decoration: none !important;
 }
 
 #projects-section { 
-    background-color: var(--background_color2);
+    background-color: #8D0000;
     border: 10px solid white;
     padding: 20px;
     text-decoration: none;
@@ -163,7 +167,7 @@ body {
 }
 
 .project-tile { 
-    background-color: var(--background_color3);
+    background-color: #B50000;
     border: 10px solid white;
     padding: 2vh;
     margin: 3vh;
@@ -209,13 +213,20 @@ body {
     border: 2px solid black;
 }
 
+/* 
+---------------------------------
+           RESUME PAGE 
+---------------------------------
+*/
 
-
+#resume-body {
+    background-color: #54004C;
+}
 
 .resume-section { 
     border: 10px solid white;
     padding: 20px;
-    background-color: var(--background_color2);
+    background-color: #720066;
 }
 
 .resume-section a {
@@ -254,20 +265,40 @@ body {
     color: var(--background_color);
 }
 
+/* 
+---------------------------------
+           ABOUT PAGE 
+---------------------------------
+*/
+
+#about-body { 
+    background-color: #623800;
+}
+
 .Service { 
     border: 10px solid white;
     padding: 20px;
-    background-color: var(--background_color2);
+    background-color: #8B4F00;
 }
 
 .Service a {
     color: white;
 }
 
+/* 
+---------------------------------
+           LIBRARY PAGE 
+---------------------------------
+*/
+
+#library-body { 
+    background-color: #00636E;
+}
+
 .ai { 
     border: 10px solid white;
     padding: 20px;
-    background-color: var(--background_color2);
+    background-color: #007F8D;
 }
 
 .ai a {
@@ -276,21 +307,7 @@ body {
 
 
 
-.toggle { 
-    margin-left: 15%;
-    text-align: center;
-}
 
-.toggle-button { 
-
-    display: flex;
-    align-items: center;
-}
-
-.toggle button { 
-    margin-left: 20px;
-    font-size: 20px;
-}
 
 /* @keyframes fade { 
     from {
