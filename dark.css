@@ -10,8 +10,15 @@
     --background_color: #0D3D00;
     --background_color2: #166E01;
     --background_color3: #1A8400;
+    /* --background_color: #33005F;
+    --background_color2: #4D0090;
+    --background_color3: #6400BC; */
     --font_color: white;
     --highlight_color: gold;
+}
+
+#ai-page {
+    --background-color: blue;
 }
 
 body {
@@ -19,7 +26,9 @@ body {
     color: var(--font_color);
     margin-left: 20%;
     margin-right: 20%;
+    animation: 3s linear 0s 1 fade;
 }
+
 
 
 .front { 
@@ -206,7 +215,7 @@ body {
 .resume-section { 
     border: 10px solid white;
     padding: 20px;
-    background-color: #166E01;
+    background-color: var(--background_color2);
 }
 
 .resume-section a {
@@ -245,7 +254,7 @@ body {
 .Service { 
     border: 10px solid white;
     padding: 20px;
-    background-color: #166E01;
+    background-color: var(--background_color2);
 }
 
 .Service a {
@@ -255,7 +264,7 @@ body {
 .ai { 
     border: 10px solid white;
     padding: 20px;
-    background-color: #166E01;
+    background-color: var(--background_color2);
 }
 
 .ai a {
@@ -279,3 +288,12 @@ body {
     margin-left: 20px;
     font-size: 20px;
 }
+
+/* @keyframes fade { 
+    from {
+        --background-color: black;
+    }
+    to {
+        --background-color: green;
+    }
+} */
